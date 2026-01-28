@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ Tống Duy Hoàng Anh</title>
+    <style>
+        /* Thiết lập cơ bản */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Phần Header với màu Gradient xanh dương */
+        header {
+            background: linear-gradient(to bottom, #001f3f, #0074D9);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        /* Phần Nội dung chính */
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 50px auto; /* Đẩy lên trên một chút để đè vào header */
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            color: #d9534f; /* Màu đỏ đô */
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Chia cột bằng Flexbox */
+        .content-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            background: #fffdf5; /* Màu nền hơi vàng nhạt */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ffeeba;
+        }
+
+        .column h3 {
+            color: #0056b3;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .info-item strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #666;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="hanh.jpg" alt="ảnh cá nhân" class="profile-pic">
+        <h1>TỐNG DUY HOÀNG ANH</h1>
+        <p>"Học hỏi không ngừng, kiến tạo tương lai."</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Giới Thiệu Bản Thân</h2>
+        <div class="content-grid">
+            <div class="column">
+                <h3>Thông Tin Cá Nhân</h3>
+                <div class="info-item"><strong>Họ và Tên:</strong> Tống Duy Hoàng Anh</div>
+                <div class="info-item"><strong>Trường:</strong> THCS & THPT Minh Hòa</div>
+                <div class="info-item"><strong>Lớp:</strong> 12/2</div>
+                <div class="info-item"><strong>Học vấn:</strong> Đang hoàn thành chương trình lớp 12</div>
+            </div>
+
+            <div class="column">
+                <h3>Sở Thích & Hoạt Động</h3>
+                <div class="info-item"><strong>Sở thích:</strong> Chơi Game TFT (Teamfight Tactics)</div>
+                <div class="info-item"><strong>Mục tiêu:</strong> Phát triển tư duy chiến lược và kỹ năng quản lý tài nguyên.</div>
+                <div class="info-item"><strong>Hoạt động:</strong> Tham gia đá banh cùng lớp, làm việc nhóm môn Tin.</div>
+                <div class="info-item"><strong>Cộng đồng:</strong> Siêng năng tham gia các buổi lao động trường học.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2> Video và audio giới thiệu bản thân </h2>
+                    <video src ="hoàng anh.mp4" controls></video>
+                    <audio src ="hoanh.mp3" controls></audio>
+    <footer>
+        Email liên hệ: tongduyhoanganh@gmail.com <br>
+        &copy; 2025 Tống Duy Hoàng Anh. Trang Web Cá Nhân.
+    </footer>
+
+</body>
+</html>
