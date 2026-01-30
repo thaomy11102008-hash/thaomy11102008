@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Sách: 999 Lá Thư Gửi Cho Chính Mình</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS STYLE --- */
+        :root {
+            --primary-blue: #0077b6; /* Xanh nước biển chính */
+            --dark-blue: #023e8a;    /* Xanh đậm */
+            --light-blue: #caf0f8;   /* Xanh cực nhạt cho background */
+            --soft-blue: #90e0ef;    /* Xanh dịu */
+            --white: #ffffff;
+            --text-gray: #444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-blue);
+            color: var(--text-gray);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hiệu ứng mờ dần khi tải trang */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Container chính */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: var(--dark-blue);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Section Giới thiệu sách */
+        .book-section {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            align-items: center;
+        }
+
+        /* Ảnh bìa và hiệu ứng */
+        .book-cover-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .book-cover {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0, 119, 182, 0.3);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .book-cover:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        /* Thông tin chi tiết */
+        .info-header {
+            border-bottom: 2px solid var(--soft-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        .info-header h2 { color: var(--primary-blue); font-size: 1.8rem; }
+        .author { color: var(--dark-blue); font-weight: bold; font-size: 1.1rem; }
+
+        .quote-card {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            position: relative;
+            font-style: italic;
+        }
+
+        .quote-card i {
+            font-size: 2rem;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Section cảm nhận & Media */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Player Controls */
+        .media-player {
+            margin-top: 15px;
+        }
+
+        video, audio {
+            width: 100%;
+            border-radius: 10px;
+            background-color: var(--dark-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .book-section, .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container fade-in">
+        <header>
+            <h1><i class="fas fa-bookmark"></i> Góc Review Sách</h1>
+        </header>
+
+        <section class="book-section">
+            <div class="book-cover-container">
+                <img src="biasach999lathuguichochinhminh.jpg" alt="999 Lá thư gửi cho chính mình" class="book-cover">
+            </div>
+
+            <div class="book-info">
+                <div class="info-header">
+                    <h2>999 Lá Thư Gửi Cho Chính Mình</h2>
+                    <p class="author"><i class="fas fa-pen-nib"></i> Tác giả: Miêu Công Tử</p>
+                </div>
+
+                <div class="summary">
+                    <h3>Tóm tắt nội dung</h3>
+                    <p>Cuốn sách là tập hợp những lời nhắn nhủ chân thành, những bài học về sự tự tin, lòng kiên trì và cách trân trọng bản thân. Mỗi lá thư là một thông điệp giúp chúng ta mạnh mẽ hơn giữa áp lực cuộc sống, nhắc nhở rằng: "Mong bạn trở thành phiên bản hoàn hảo nhất của chính mình."</p>
+                </div>
+
+                <div class="quote-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Hãy để những muộn phiền lại sau lưng, ngày mai khi mặt trời mọc, thế giới này vẫn tươi đẹp như chưa từng có vết xước."</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> Cảm nhận cá nhân</h3>
+                <p>Đọc cuốn sách này giống như đang ngồi đối diện với một người bạn tri kỷ đang lắng nghe và vỗ về. Tone màu xanh nhẹ nhàng của trang web cũng chính là cảm giác mà cuốn sách mang lại - sự bình yên sau những bão giông. Đây không chỉ là sách, mà là liều thuốc cho tâm hồn.</p>
+                <P>Điều khiến tôi tâm đắc nhất chính là thông điệp về sự tự chữa lành. Cuốn sách không chỉ ra cho chúng ta một con đường tắt để đi đến hạnh phúc, mà nó dạy chúng ta cách chấp nhận những khiếm khuyết của bản thân. Mỗi lá thư giống như một tấm gương phản chiếu, giúp tôi nhận ra rằng: thay vì mải mê chạy theo sự kỳ vọng của người khác, việc thấu hiểu và bao dung với chính mình mới là chìa khóa để tìm thấy sự an yên thực sự. Đây chắc chắn là cuốn sách gối đầu giường mà tôi sẽ còn lật lại nhiều lần mỗi khi thấy lòng mình chông chênh.</P>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-play-circle"></i> Media Minh Họa</h3>
+                
+                <div class="media-player">
+                    <p style="margin-bottom: 5px; font-size: 0.85rem;">Video giới thiệu:</p>
+                    <video src="videosach.mp4" width="200" height="300" controls></video>
+                </div>
+
+                <div class="media-player" style="margin-top: 20px;">
+                    <p style="margin-bottom: 5px; font-size: 0.85rem;">Podcast truyền cảm hứng:</p>
+                    <audio controls>
+                        <source src="audiosach.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Contact: hoaiduong3k@gamil &copy; 2024 | Nguyễn Hồ Hoài Dương</p>
+        </footer>
+    </div>
+
+</body>
+</html>
